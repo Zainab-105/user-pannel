@@ -1,0 +1,11 @@
+      .about {
+            text-align: justify; 
+            font-family: Arial;
+            padding-top: 10px;
+             margin-left: 200px;
+            margin-right: 200px; 
+        }
+        h2, h5, h6{
+            color: #4a8963;
+            padding-top: 10px;
+        } 

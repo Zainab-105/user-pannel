@@ -1,22 +1,9 @@
-.main{
-    background-color: #F2EEE5;
-    /* height: 750px; */
-}
-.slogan{
-    font-size: 20px;
-    font-variant: small-caps;
-    font-weight: bold;
-    color: #4a8963;
-    text-align: center;
-    padding-top: 15px;
-}
-
 .hadith-card{
     background-color: white;
     border-radius: 50px;
     margin-top: 5%;
-    
-    padding: 50px;
+    margin-bottom: 2%;
+    padding: 25px;
 }
 .Narrated{
     color: #4a8963;
@@ -44,18 +31,17 @@
     padding: 3px;
     color: #4a8963;
 }
-.view{
+.stars{
+    color: #FBBC00
+}
+.sidePanelContainer{
+    padding: 40px;
     color: white;
+    border-radius: 12px;
     background-color: #4a8963;
+    position: fixed;
+    left: 10px !important;
+    top: 23%;
 }
-.view:hover{
-    border: 1px solid #4a8963;
-    color: #4a8963;
-}
-.card-container{
-    margin-top: 2rem;
-   
-}
-.card-border{
-    margin-bottom: 2rem;
-}
+
+  

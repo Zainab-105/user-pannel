@@ -1,57 +1,83 @@
 import React from 'react'
 import './index.css';
-import SearchIcon from '@mui/icons-material/Search';
+import img1 from "../../Components/Assets/img1.png";
+import img2 from "../../Components/Assets/img2.png"
+
+import img3 from "../../Components/Assets/img3.png"
+import Searchbar from '../../Components/searchBar/Searchbar';
+import { Link } from 'react-router-dom';
 export default function Index() {
   return (
-    <section className="section2">
+   
     <div className="container-fluid main">
       <div className="container">
         {/* slogan */}
         <p className="slogan">Unveiling the Past, Securing the Future, Hadith Authentication for Generations</p>
         {/* search bar */}
-        <div className="indexsearchcontainer">
-          <div id="indexsearch">
-            <form name="searchform" action="/search/" method="get" id="searchform">
-                <div className="searchcontainer">
-                <input type="text" className="indexsearchquery" name="q" placeholder="Search &#8230;" defaultValue="" />
-            <SearchIcon className='searchicon'/>
-                </div>
-{/*            
-              <input type="submit" className="indexsearchsubmit" value="search" /> */}
-            </form>
+      <Searchbar/>
+      <section>
+      <div className="container-fluid card-container ">
+  <div className="container">
+    <div className="row">
+      <div className="col-md-4">
+        <div className="card card-border" style={{ width: "18rem" }}>
+          <img
+            className="card-img-top"
+            src={img2}
+            
+          />
+          <div className="card-body ">
+            <h5 className="card-title">Sahih al-Bukhari</h5>
+            <p className="card-text">
+              Sahih al-Bukhari is a collection of hadith compiled by Abu
+              Abdullah Muhammad Ibn Ismail al-Bukhari(rahimahullah).
+            </p>
+            <Link to="/hadiths" className="btn view">View Collection</Link>
           </div>
         </div>
       </div>
-      <div className="container-fluid ">
-        <div className="container hadith-card">
-          <div className="row">
-            <div className="col-md-6">
-              <h4 className="Narrated">Narrated 'Umar bin Al-Khattab:</h4>
-              <p className="translation">I heard Allah's Messenger (ﷺ) saying, "The reward of deeds depends upon the intentions and every person will get the reward according to what he has intended. So whoever emigrated for worldly benefits or for a woman to marry, his emigration was for what he emigrated for."</p>
-              <div className="row">
-                <div className="col-md-3">
-                  <p><b>Source</b></p>
-                  <p><b>Catagorey</b></p>
-                </div>
-                <div className="col-md-5">
-                  <p>Sahih-Al Bukhari</p>
-                  <p>Daif</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <p className="hadith">حَدَّثَنَا الْحُمَيْدِيُّ عَبْدُ اللَّهِ بْنُ الزُّبَيْرِ ، قَالَ : حَدَّثَنَا سُفْيَانُ ، قَالَ : حَدَّثَنَا يَحْيَى بْنُ سَعِيدٍ الْأَنْصَارِيُّ ، قَالَ : أَخْبَرَنِي مُحَمَّدُ بْنُ إِبْرَاهِيمَ التَّيْمِيُّ ، أَنَّهُ سَمِعَ عَلْقَمَةَ بْنَ وَقَّاصٍ اللَّيْثِيَّ ، يَقُولُ : سَمِعْتُ عُمَرَ بْنَ الْخَطَّابِ رَضِيَ اللَّهُ عَنْهُ عَلَى الْمِنْبَرِ، قَالَ : سَمِعْتُ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، يَقُولُ : " إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى دُنْيَا يُصِيبُهَا أَوْ إِلَى امْرَأَةٍ يَنْكِحُهَا، فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ "
-              </p>
-              <div className="links">
-                <a href="#">Share</a>
-                <a href="#">Copy</a>
-                <a href="contact.html">Feedback</a>
-              </div>
-            </div>
+      <div className="col-md-4">
+        <div className="card" style={{ width: "18rem" }}>
+          <img
+            className="card-img-top"
+            src={img1}
+            
+          />
+          <div className="card-body">
+            <h5 className="card-title">Sahih Muslim</h5>
+            <p className="card-text">
+              Sahih Muslim is a collection of hadith compiled by Imam Muslim ibn
+              al-Hajjaj al-Naysaburi (rahimahullah).
+            </p>
+            <Link to="/hadiths" className="btn view">View Collection</Link>
+           
+          </div>
+        </div>
+      </div>
+      <div className="col-md-4">
+        <div className="card" style={{ width: "18rem" }}>
+          <img
+            className="card-img-top"
+            src={img3}
+     
+          />
+          <div className="card-body">
+            <h5 className="card-title">Sunan Abi Dawud</h5>
+            <p className="card-text">
+              Letter from Imam Abu Dawud to the people of Makkah explaining his
+              book, terms he uses, and his methodology.
+            </p>
+            <Link to="/hadiths" className="btn view">View Collection</Link>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</div>
+</section>
+      </div>
+      
+      </div>
+ 
   )
 }
